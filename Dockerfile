@@ -13,10 +13,11 @@ ENV CHAT_ID=""
 VOLUME /hostpipe
 WORKDIR /work
 
-# Copy entrypoint script
-COPY package.json package-lock.json ./
+# Copy entrypoint script and files
+COPY package.json package-lock.json config.example.json ./
+COPY entrypoint.sh server.js ./
+COPY lib ./lib
 RUN npm install
-COPY . .
 RUN chmod +x entrypoint.sh
 
 # Run the command on container startup

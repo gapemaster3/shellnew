@@ -9,19 +9,20 @@ https://github.com/yozel/shell-bot
 https://github.com/botgram/shell-bot
 
 ....
-crear pipe con rw --> /hostpipe/commandpipe
+crear pipe --> /hostpipe/commandpipe y pipeout
 script commandpipe.sh
 
 ...
-docker build -t baroka/shell-bot .
-docker-compose -f new_compose.yaml up -d
+./new_docker.sh
+/run sh /volume2/docker/docker.sh help
 
 ....
 TODO
- - borrar new_compose.yaml
- - habilitar script inicio
-
- - devolver salida comando
+ - borrar new_compose.yaml y new_docker.sh
  - new readme -> github, docker
 
+ - devolver salida comando
 
+
+command.js
+server.js
