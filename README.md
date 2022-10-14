@@ -20,6 +20,7 @@ script commandpipe.sh
 TODO
  - borrar new_compose.yaml y new_docker.sh
  - new readme -> github, docker
+ - ping/curl whitelist
 
  - devolver salida comando
 

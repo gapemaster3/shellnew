@@ -120,6 +120,9 @@ bot.command("run", function (msg, reply, next) {
   msg.context.command.on("exit", function() {
     msg.context.command = null;
   });
+  
+  var newchunk = fs.readFileSync("/hostpipe/pipeout", "utf-8");
+  return reply.html(newchunk);
 });
 
 function handleDownload(msg, reply) {
