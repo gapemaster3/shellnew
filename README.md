@@ -9,12 +9,11 @@ https://github.com/yozel/shell-bot
 https://github.com/botgram/shell-bot
 
 ....
-crear pipe --> /hostpipe/commandpipe y pipeout
 script commandpipe.sh
 
 ...
 ./new_docker.sh
-/run sh /volume2/docker/docker.sh help
+/run sh /volume2/docker/docker.sh
 
 ....
 TODO

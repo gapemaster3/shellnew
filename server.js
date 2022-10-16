@@ -121,7 +121,7 @@ bot.command("run", function (msg, reply, next) {
     msg.context.command = null;
   });
   
-  var newchunk = fs.readFileSync("/hostpipe/pipeout", "utf-8");
+  var newchunk = fs.readFileSync("/hostpipe/commandpipeout", "utf-8");
   return reply.html(newchunk);
 });
 
