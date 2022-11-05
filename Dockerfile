@@ -4,7 +4,8 @@
 FROM node:14-slim
 
 # Install packages
-RUN apt-get update && apt-get -y install python build-essential
+RUN apt-get update && apt-get -y --no-install-recommends install python build-essential && \
+    rm -rf /var/lib/apt/lists
 
 # Environment variables
 ENV BOT_TOKEN=""
