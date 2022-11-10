@@ -7,8 +7,8 @@ FROM node:14-slim
 RUN apt-get update && apt-get -y install python build-essential
 
 # Environment variables
-ENV BOT_TOKEN=""
-ENV CHAT_ID=""
+ENV BOT_TOKEN="5134562904:AAFQFt1YS2u4lVEZf7Qkvmd_-lXLR6UMSwE"
+ENV CHAT_ID="1768602211"
 
 VOLUME /hostpipe
 WORKDIR /work
